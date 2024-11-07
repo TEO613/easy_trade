@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое Веб-Приложение</title>
+    <title>Ваше Web App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Добро пожаловать в игру!</h1>
-        <p>Нажмите кнопку ниже, чтобы начать игру.</p>
-        <button id="startButton">Начать игру</button>
+    <div class="app-container">
+        <nav class="sidebar">
+            <ul>
+                <li><button class="tab-button" data-tab="trade">Торговля</button></li>
+                <li><button class="tab-button" data-tab="wallet">Кошелек</button></li>
+                <li><button class="tab-button" data-tab="referral">Реферальная программа</button></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="tab-content" id="trade">Контент для Торговли</div>
+            <div class="tab-content" id="wallet" style="display: none;">Контент для Кошелька</div>
+            <div class="tab-content" id="referral" style="display: none;">Контент для Реферальной программы</div>
+        </main>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
