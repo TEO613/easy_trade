@@ -1,7 +1,4 @@
-document.querySelector('.high-btn').addEventListener('click', () => {
-    alert('Ставка на повышение!');
-});
-
-document.querySelector('.low-btn').addEventListener('click', () => {
-    alert('Ставка на понижение!');
+@@ -0,0 +1,3 @@
+document.getElementById("startButton").addEventListener("click", function() {
+    alert("Игра началась!"); // Здесь можно добавить логику игры
 });
