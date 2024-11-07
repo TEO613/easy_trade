@@ -1,20 +1,7 @@
-document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-        // Скрываем все вкладки
-        document.querySelectorAll('.tab-content').forEach(content => {
-            content.style.display = 'none';
-        });
+document.querySelector('.high-btn').addEventListener('click', () => {
+    alert('Ставка на повышение!');
+});
 
-        // Убираем активный класс со всех кнопок
-        document.querySelectorAll('.tab-button').forEach(btn => {
-            btn.classList.remove('active');
-        });
-
-        // Показываем выбранную вкладку
-        const tabId = button.getAttribute('data-tab');
-        document.getElementById(tabId).style.display = 'block';
-
-        // Добавляем активный класс на нажатую кнопку
-        button.classList.add('active');
-    });
+document.querySelector('.low-btn').addEventListener('click', () => {
+    alert('Ставка на понижение!');
 });
